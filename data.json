@@ -1,0 +1,61 @@
+{
+  "name": "Dana Naser",
+  "contact": {
+    
+    "email": "danamohop.4@gmail.com",
+    "github": "https://github.com/Dana-Naser",
+    "linkedin": "http://www.linkedin.com/in/dananaser1"
+  },
+  "profile": "Motivated 3rd-year B.Sc. Information Systems student (GPA 82). Strong background in Java, SQL, and OOP, with hands-on experience in ETL pipelines, Linux, and cloud-native concepts. Familiar with Docker & Kubernetes; exploring real-time stream processing. Quick learner, fluent in English, and eager to contribute to Agile, international teams at SAP.",
+  "education": [
+    {
+      "institution": "University of Haifa",
+      "degree": "B.Sc. in Information Systems",
+      "status": "3rd year",
+      "expected_graduation": "2026-2027",
+      "gpa": 82,
+      "relevant_coursework": [
+        { "name": "Data Structures and Algorithms", "grade": 84 },
+        { "name": "Object-Oriented Programming - Java", "grade": 95 },
+        { "name": "Introduction to Databases", "grade": 96 },
+        { "name": "Introduction to Computer Science and Programming", "grade": 84 },
+        { "name": "Mathematics for Logic and Discrete Structures", "grade": 93 }
+      ]
+    }
+  ],
+  "skills": {
+    "programming_and_data": ["Java (OOP)", "C", "SQL", "HTML", "CSS"],
+    "data_engineering": ["ETL/ELT processes (import, transform, load)", "MS Access", "XML/JSON handling"],
+    "systems_and_tools": ["Linux (bash scripting)", "Git/GitHub", "Docker", "Kubernetes"],
+    "testing_and_monitoring": ["JUnit (unit testing)", "debugging", "system reliability basics"],
+    "collaboration": ["Agile teamwork", "analytical thinking", "independent learning", "time management"]
+  },
+  "projects": [
+    {
+      "name": "Hospital Management System",
+      "technologies": ["Java", "Swing", "File Serialization"],
+      "repository": "https://github.com/Dana-Naser/Hospital-Management-System",
+      "highlights": [
+        "Desktop application for managing hospital operations and patient records",
+        "Applied OOP principles and persistent data storage techniques",
+        "Emphasized modular structure and structured decision-support logic",
+        "Focused on system reliability and performance optimization"
+      ]
+    },
+    {
+      "name": "Wine Inventory Management System",
+      "technologies": ["Java", "MS Access", "XML/JSON"],
+      "repository": "https://github.com/Dana-Naser/-Wine-Inventory-Management-System",
+      "highlights": [
+        "Full-stack desktop system with XML/JSON import/export and database integration",
+        "ETL-style data processing with executable JAR delivery and usability focus",
+        "Applied Agile teamwork practices with emphasis on stable, reliable data management"
+      ]
+    }
+  ],
+  "languages": [
+    { "language": "Arabic", "proficiency": "Native" },
+    { "language": "Hebrew", "proficiency": "Fluent" },
+    { "language": "English", "proficiency": "Fluent" }
+  ]
+}

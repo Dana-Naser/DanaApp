@@ -1,0 +1,268 @@
+/* ===== Theme ===== */
+:root {
+  --primary: #0f172a;           /* Slate-900 */
+  --muted: #475569;             /* Slate-600 */
+  --accent: #0ea5e9;            /* Sky-500 */
+  --accent-600: #275d86;        /* כחול מעט "רגוע" ללינקים (דומה לתמונה) */
+  --bg: #f8fafc;                /* Slate-50 */
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --radius: 14px;
+  --font: 'Inter', 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  --shadow: 0 10px 25px rgba(2, 132, 199, 0.08);
+}
+
+/* בסיס */
+* { box-sizing: border-box; }
+html, body { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: linear-gradient(180deg, #f0f9ff 0%, var(--bg) 180px);
+  color: var(--primary);
+  line-height: 1.65;
+}
+
+/* ===== Header / Hero ===== */
+header {
+  text-align: center;
+  padding: 3.5rem 1rem 2rem;
+  background: linear-gradient(180deg, rgba(14,165,233,0.10), rgba(14,165,233,0.00));
+  border-bottom: 1px solid rgba(2,132,199,0.10);
+  position: relative;
+  overflow: clip;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -60% -20%;
+  height: 260px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(14,165,233,0.25) 0%, rgba(14,165,233,0.00) 60%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+/* תמונת פרופיל עם מסגרת גרדיינט עדינה */
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background-image: url('profile.png'); /* התמונה שלך */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(2,132,199,0.18);
+}
+.profile-photo::before {
+  content: "";
+  position: absolute; inset: -3px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent), #60a5fa);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+
+/* כותרת ושורה מתחתיה */
+h1 {
+  margin: 0.75rem 0 0.25rem;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+header p {
+  margin: 0.25rem auto 0;
+  max-width: 680px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* ===== Social Links (האייקונים כמו בתמונה) ===== */
+.social-links {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  color: var(--accent-600);
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: transform .15s ease, color .2s ease, opacity .2s ease;
+}
+
+.social .icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor; /* האייקון מקבל את צבע הטקסט */
+  display: inline-block;
+}
+
+.social:hover {
+  color: var(--accent);        /* כחול בהיר יותר בהובר */
+  transform: translateY(-2px);
+}
+
+/* ===== Nav ===== */
+nav {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--accent-600);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  border-radius: 999px; /* pill */
+  border: 1px solid rgba(2,132,199,0.18);
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: saturate(140%) blur(6px);
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  display: inline-flex; align-items: center; gap: .5rem;
+}
+
+nav a:hover {
+  transform: translateY(-1px);
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #38bdf8);
+  box-shadow: 0 8px 18px rgba(2,132,199,0.20);
+}
+
+/* קישורים כלליים */
+a { color: var(--accent-600); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Layout ===== */
+main {
+  max-width: 980px;
+  margin: 2.2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Cards / Sections */
+section {
+  background: var(--card);
+  padding: 1.4rem 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(2,132,199,0.10);
+  border-color: rgba(2,132,199,0.30);
+}
+
+/* כותרות סקשנים עם פס הדגשה */
+h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--primary);
+  position: relative;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: .5rem;
+  background: linear-gradient(90deg, var(--accent), #38bdf8);
+  border-radius: 999px;
+}
+
+/* ===== Lists / Skills / Experience / Projects ===== */
+.experience ul, .skills-list, #projects ul {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+
+.experience li, #projects li {
+  margin-bottom: 1.1rem;
+  color: var(--primary);
+}
+
+.experience li strong, #projects li strong {
+  display: inline-block;
+  margin-bottom: .25rem;
+}
+
+/* תגיות כישורים בסגנון "פיל" */
+.skills-list {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+}
+.skills-list li {
+  display: inline-flex; align-items: center; gap: .45rem;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  color: var(--primary);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: .98rem;
+  box-shadow: 0 2px 6px rgba(15,23,42,0.04);
+}
+.skills-list li::before {
+  content: "•";
+  font-weight: 900;
+  color: var(--accent-600);
+}
+
+/* ===== Buttons ===== */
+.btn, .button, #projects a[href], .experience a[href] {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .6rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(2,132,199,0.18);
+  background: linear-gradient(135deg, #fff, #f8fafc);
+  color: var(--accent-600);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+}
+.btn:hover, .button:hover, #projects a[href]:hover, .experience a[href]:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, var(--accent), #38bdf8);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(2,132,199,0.22);
+}
+
+/* ===== Typography helpers ===== */
+p { margin: 0 0 0.8rem; color: var(--muted); }
+.small { font-size: .95rem; color: var(--muted); }
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.6rem 0 2rem;
+  color: var(--muted);
+  font-size: .98rem;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+/* ===== Utilities ===== */
+.container { max-width: 980px; margin: 0 auto; padding: 0 1rem; }
+.grid { display: grid; gap: 1rem; }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.center { text-align: center; }
+.m0 { margin: 0 !important; }
+.mt1 { margin-top: .5rem !important; }
+.mt2 { margin-top: 1rem !important; }
+.mt3 { margin-top: 1.5rem !important; }
