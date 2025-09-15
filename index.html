@@ -108,8 +108,41 @@ Motivated third-year B.Sc. Information Systems student at the University of Haif
 
   <footer>
   <p>&copy; 2025 Dana Naser. All rights reserved.</p>
-  <img src="https://komarev.com/ghpvc/?username=Dana-Naser&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+
+  <div class="profile-views" aria-label="Profile views">
+    <span class="label">Profile views</span>
+    <span class="count" id="view-count">0</span>
+  </div>
 </footer>
+
+<!-- Counter script -->
+<script>
+  (function () {
+    const NAMESPACE_KEY = 'dana-naser-github-io_DanaApp'; // מזהה ייחודי למונה שלך
+    const API = 'https://api.countapi.xyz';
+    const viewed = sessionStorage.getItem('pv-seen'); // פעם אחת לכל סשן
+
+    const endpoint = viewed
+      ? `${API}/get/${NAMESPACE_KEY}`
+      : `${API}/hit/${NAMESPACE_KEY}`;
+
+    fetch(endpoint)
+      .then(r => r.json())
+      .then(d => {
+        const el = document.getElementById('view-count');
+        if (el && d && typeof d.value === 'number') {
+          el.textContent = d.value.toLocaleString();
+        }
+        if (!viewed) sessionStorage.setItem('pv-seen', '1');
+      })
+      .catch(() => {
+        // במקרה של שגיאה—לא שוברים את העמוד
+        const el = document.getElementById('view-count');
+        if (el) el.textContent = '—';
+      });
+  })();
+</script>
+
 
 
 </body>

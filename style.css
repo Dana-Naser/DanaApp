@@ -256,6 +256,30 @@ footer {
   border-top: 1px solid var(--border);
   margin-top: 2rem;
 }
+.profile-views {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  margin-top: .6rem;
+  font-size: .9rem;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.profile-views .label {
+  background: #6b7280;        /* אפור */
+  color: #fff;
+  padding: .22rem .55rem;
+}
+.profile-views .count {
+  background: #0ea5e9;        /* כחול תואם accent */
+  color: #fff;
+  font-weight: 700;
+  padding: .22rem .55rem;
+  min-width: 2.2rem;
+  text-align: center;
+}
+
 
 /* ===== Utilities ===== */
 .container { max-width: 980px; margin: 0 auto; padding: 0 1rem; }
