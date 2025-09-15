@@ -106,7 +106,7 @@ Motivated third-year B.Sc. Information Systems student at the University of Haif
     </section>
   </main>
 
-  <footer>
+ <footer>
   <p>&copy; 2025 Dana Naser. All rights reserved.</p>
 
   <div class="profile-views" aria-label="Profile views">
@@ -115,30 +115,30 @@ Motivated third-year B.Sc. Information Systems student at the University of Haif
   </div>
 </footer>
 
-<!-- Counter script -->
+<!-- Real profile views counter (CountAPI) -->
 <script>
   (function () {
-    const NAMESPACE_KEY = 'dana-naser-github-io_DanaApp'; // מזהה ייחודי למונה שלך
+    // מזהה ייחודי למונה שלך. תשאירי כמו שהוא כל עוד שם האתר נשאר DanaApp.
+    const NAMESPACE_KEY = 'dana-naser-github-io_DanaApp';
     const API = 'https://api.countapi.xyz';
-    const viewed = sessionStorage.getItem('pv-seen'); // פעם אחת לכל סשן
 
-    const endpoint = viewed
-      ? `${API}/get/${NAMESPACE_KEY}`
-      : `${API}/hit/${NAMESPACE_KEY}`;
+    // נגד העלאה בכל ריענון — נגדיל פעם אחת לכל סשן דפדפן
+    const alreadyHit = sessionStorage.getItem('pv-hit');
+    const url = alreadyHit ? `${API}/get/${NAMESPACE_KEY}`
+                           : `${API}/hit/${NAMESPACE_KEY}`;
 
-    fetch(endpoint)
+    fetch(url)
       .then(r => r.json())
       .then(d => {
         const el = document.getElementById('view-count');
-        if (el && d && typeof d.value === 'number') {
+        if (el && typeof d.value === 'number') {
           el.textContent = d.value.toLocaleString();
         }
-        if (!viewed) sessionStorage.setItem('pv-seen', '1');
+        if (!alreadyHit) sessionStorage.setItem('pv-hit', '1');
       })
       .catch(() => {
-        // במקרה של שגיאה—לא שוברים את העמוד
         const el = document.getElementById('view-count');
-        if (el) el.textContent = '—';
+        if (el) el.textContent = '—'; // לא לשבור את העמוד אם יש שגיאה
       });
   })();
 </script>
