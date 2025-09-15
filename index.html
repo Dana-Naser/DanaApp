@@ -107,41 +107,6 @@
 
   <footer>
     <p>&copy; 2025 Dana Naser. All rights reserved.</p>
-
-    <div class="profile-views" aria-label="Profile views">
-      <span class="label">Profile views</span>
-      <span class="count" id="view-count">0</span>
-    </div>
   </footer>
-
-  <!-- Real profile views counter (CountAPI) -->
-  <script>
-    (function () {
-      const API = 'https://api.countapi.xyz';
-      const NAMESPACE = 'dana-naser.github.io'; 
-      const KEY = 'DanaApp';                     
-      const alreadyHit = sessionStorage.getItem('pv-hit');
-
-      const hitUrl = `${API}/hit/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(KEY)}`;
-      const getUrl = `${API}/get/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(KEY)}`;
-      const endpoint = alreadyHit ? getUrl : hitUrl;
-
-      fetch(endpoint)
-        .then(r => r.json())
-        .then(d => {
-          const el = document.getElementById('view-count');
-          if (el && d && typeof d.value === 'number') {
-            el.textContent = d.value.toLocaleString();
-            if (!alreadyHit) sessionStorage.setItem('pv-hit', '1');
-          } else {
-            throw new Error('bad response');
-          }
-        })
-        .catch(() => {
-          const el = document.getElementById('view-count');
-          if (el) el.textContent = '—';
-        });
-    })();
-  </script>
 </body>
 </html>
