@@ -4,14 +4,32 @@
     "email": "danamohop.4@gmail.com",
     "linkedin": "https://www.linkedin.com/in/dananaser1"
   },
-  "headline": "Data Analyst | SQL | Business Intelligence | KPI Reporting",
-  "profile": "Third-year B.Sc. Information Systems student specializing in data analysis, business intelligence, and structured data modeling. Strong foundation in SQL, KPI tracking, reporting logic, and analytical problem-solving. Passionate about turning raw data into actionable business insights.",
+  "headline": "Data Analyst • SQL • Business Intelligence • KPI Reporting",
+  "profile": "Data-driven Information Systems student focused on SQL, KPI design, and business reporting. I transform structured data into clear insights that support decision-making.",
+  "key_chips": [
+    "SQL",
+    "BI & Data Warehousing",
+    "Data Modeling",
+    "KPI Reporting",
+    "Excel",
+    "Python (Pandas)"
+  ],
+  "about": {
+    "p1": "I’m a third-year B.Sc. Information Systems student at the University of Haifa, specializing in data analytics and business intelligence.",
+    "p2": "My strength is translating business questions into structured SQL logic, KPIs, and reporting views that create operational clarity and support better decisions.",
+    "what_i_bring": [
+      "Strong SQL fundamentals (joins, aggregations, subqueries)",
+      "BI mindset: KPIs, trends, anomalies, operational visibility",
+      "Data modeling & database design (ERD, normalization)",
+      "Clear communication & structured problem-solving"
+    ]
+  },
   "education": [
     {
       "institution": "University of Haifa",
       "degree": "B.Sc. in Information Systems",
       "status": "3rd year",
-      "expected_graduation": "2026-2027",
+      "expected_graduation": "2026–2027",
       "relevant_coursework": [
         "Database Systems (SQL)",
         "Business Intelligence & Data Warehousing",
@@ -24,40 +42,114 @@
     }
   ],
   "skills": {
-    "data_analytics": ["SQL", "Data Modeling", "KPI Reporting", "Data Cleaning", "Excel (Advanced)"],
-    "programming": ["Python (Pandas)", "Java (OOP)", "HTML", "CSS"],
-    "tools": ["Power BI (developing)", "Git", "Docker (basic)", "Linux", "MS Access"]
+    "Data & Analytics": [
+      "SQL (joins, aggregations, subqueries)",
+      "Data modeling & normalization (ERD)",
+      "KPI design & reporting logic",
+      "Data cleaning & transformation",
+      "Excel (advanced, PivotTables)"
+    ],
+    "Tools": [
+      "Power BI (developing)",
+      "Git",
+      "Docker (basic)",
+      "Linux",
+      "MS Access"
+    ],
+    "Programming": [
+      "Python (Pandas)",
+      "Java (OOP)",
+      "HTML/CSS (responsive UI)"
+    ],
+    "Languages": [
+      "Arabic (Native)",
+      "Hebrew (Fluent)",
+      "English (Fluent)"
+    ]
+  },
+  "case_study": {
+    "title": "Winery Sales & Inventory Analysis",
+    "summary": "A structured analytics foundation to support KPI tracking and operational decision-making.",
+    "brief": "Improve inventory visibility and identify sales & stock risks using normalized data + KPI queries.",
+    "stakeholders": "Operations manager, sales lead",
+    "before_after": [
+      "Before: limited KPI visibility and inconsistent reporting logic",
+      "After: normalized schema + repeatable SQL KPI queries for monitoring"
+    ],
+    "deliverables": [
+      "ERD + normalized schema",
+      "KPI definitions (sales, stock risk, rotation)",
+      "Analytical SQL queries for reporting",
+      "Insights & recommendations"
+    ],
+    "link": ""
   },
   "projects": [
     {
       "name": "Winery Sales & Inventory Analysis",
-      "focus": "KPI tracking & operational reporting",
-      "tools": ["SQL", "MS Access", "Data Modeling"],
-      "highlights": [
+      "pill": "SQL • Modeling • Reporting",
+      "one_liner": "Designed SQL-driven KPI monitoring to improve inventory visibility and decision-making.",
+      "problem": "Inventory levels were not aligned with demand trends, limiting operational visibility.",
+      "objective": "Track KPIs and improve inventory awareness to support operational decisions.",
+      "approach": [
         "Designed ERD and normalized tables for reliable querying",
-        "Implemented analytical SQL queries for KPI tracking",
-        "Simulated reporting logic and identified stock imbalance patterns"
-      ]
+        "Built analytical SQL queries for KPI tracking",
+        "Simulated reporting logic for management insights"
+      ],
+      "insights": [
+        "Identified product-level sales distribution trends",
+        "Highlighted stock imbalance patterns across items"
+      ],
+      "recommendations": [
+        "Rebalance low-rotation items to reduce holding risk",
+        "Monitor weekly KPI indicators to prevent shortages"
+      ],
+      "tags": ["SQL", "MS Access", "ERD", "KPIs"],
+      "link": ""
     },
     {
       "name": "StockSync",
-      "focus": "Inventory monitoring & UX-first interface",
-      "tools": ["HTML", "CSS", "BI Concepts"],
-      "highlights": [
-        "Responsive web app concept for inventory tracking and recipe suggestions",
+      "pill": "Web • UI/UX • KPI Thinking",
+      "one_liner": "Inventory tracking concept focused on clarity, visibility, and operational thinking.",
+      "problem": "Users struggle to track inventory clearly and identify waste-driving patterns.",
+      "objective": "Improve inventory awareness and reduce waste through structured visibility.",
+      "approach": [
+        "Designed mobile-friendly UI focused on clarity & speed",
         "Structured inventory logic to enable KPI-style monitoring",
-        "Focused on mobile accessibility and UI clarity"
-      ]
+        "Supported recipe suggestions based on available ingredients"
+      ],
+      "insights": [
+        "Demonstrates dashboard mindset: visibility → action",
+        "Highlights UX best practices for fast decision-making"
+      ],
+      "recommendations": [
+        "Add simple KPI widgets (items expiring soon, weekly waste)",
+        "Include filters for category + consumption rate"
+      ],
+      "tags": ["HTML", "CSS", "Responsive", "UI/UX"],
+      "link": ""
     },
     {
       "name": "Hospital Operations System",
-      "focus": "Structured operational data and process logic",
-      "tools": ["Java", "OOP"],
-      "highlights": [
-        "Modeled core entities and workflows for operations management",
-        "Built consistent logic for records and coordination",
-        "Emphasized maintainability and structured thinking"
-      ]
+      "pill": "Structured Data • Process Logic",
+      "one_liner": "Desktop system emphasizing clean data structure and maintainable process logic.",
+      "problem": "Operational records and workflows require consistent structure to stay reliable.",
+      "objective": "Model core entities and workflows to support coordination and maintainability.",
+      "approach": [
+        "Modeled core entities and relationships",
+        "Built consistent OOP logic for managing operations & records",
+        "Focused on maintainability and structured thinking"
+      ],
+      "insights": [
+        "Strong system-to-data translation",
+        "Reliable structure improves operational consistency"
+      ],
+      "recommendations": [
+        "Add reporting views for operational monitoring",
+        "Document workflows and entity relationships clearly"
+      ],
+      "tags": ["Java", "OOP", "Process", "Data Structuring"],
+      "link": ""
     }
   ]
 }
