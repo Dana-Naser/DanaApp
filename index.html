@@ -200,19 +200,6 @@
       w.innerHTML = '';
       (data.about?.what_i_bring || []).forEach(x => w.appendChild(li(x)));
 
-      // case study
-      document.getElementById('caseTitle').textContent = data.case_study.title;
-      document.getElementById('caseSummary').textContent = data.case_study.summary;
-      document.getElementById('caseBrief').textContent = data.case_study.brief;
-      document.getElementById('caseStakeholders').textContent = data.case_study.stakeholders;
-
-      const ba = document.getElementById('caseBeforeAfter');
-      ba.innerHTML = '';
-      (data.case_study.before_after || []).forEach(x => ba.appendChild(li(x)));
-
-      const del = document.getElementById('caseDeliverables');
-      del.innerHTML = '';
-      (data.case_study.deliverables || []).forEach(x => del.appendChild(li(x)));
 
       // projects
       const grid = document.getElementById('projectsGrid');
