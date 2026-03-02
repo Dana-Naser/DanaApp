@@ -7,73 +7,35 @@
   <meta name="description" content="Dana Naser — Data Analyst portfolio: SQL, BI, KPI reporting, data modeling, and projects." />
   <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="theme-neon">
-  <!-- Moving background blobs -->
-  <div class="bg-blobs" aria-hidden="true">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="blob b3"></div>
-  </div>
-
-  <!-- Top scroll progress bar -->
-  <div class="scroll-progress" aria-hidden="true"></div>
+<body>
 
   <header class="hero">
-    <div class="hero-inner">
-
-      <div class="profile-wrap">
-        <div class="profile-photo" aria-label="Profile photo"></div>
-        <div class="profile-badge" title="Open to work">
-          <span class="dot"></span>
-          <span id="openToWorkText">Open to work</span>
-        </div>
-      </div>
+    <div class="container hero-grid">
+      <div class="avatar" aria-label="Profile photo"></div>
 
       <div class="hero-text">
-        <h1 id="name">Your Name</h1>
-        <p class="headline" id="headline">Data Analyst • SQL • Business Intelligence • KPI Reporting</p>
-
-        <p class="subhead" id="profile">
+        <p class="badge">Open to work</p>
+        <h1>Dana Naser</h1>
+        <p class="title">Data Analyst • SQL • Business Intelligence • KPI Reporting</p>
+        <p class="summary">
           I turn raw data into clear, actionable insights that support business decision-making.
+          Strong foundation in SQL, BI & data modeling, with experience building KPI logic and structured reporting.
         </p>
 
-        <div class="cta-row">
+        <div class="actions">
           <a class="btn primary" href="#projects">View Projects</a>
           <a class="btn" href="#contact">Contact</a>
         </div>
 
-        <div class="social-links" aria-label="Contact and social links">
-          <a id="emailLink" href="#" class="social" aria-label="Email">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
-            </svg>
-            <span>Email</span>
-          </a>
-
-          <a id="linkedinLink" href="#" target="_blank" rel="noopener" class="social" aria-label="LinkedIn">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM0 8.98h5V24H0V8.98Zm7.98 0h4.79v2.05h.07c.67-1.27 2.32-2.6 4.78-2.6 5.12 0 6.07 3.37 6.07 7.76V24h-5v-6.7c0-1.6-.03-3.67-2.24-3.67-2.24 0-2.58 1.75-2.58 3.55V24h-5V8.98Z"/>
-            </svg>
-            <span>LinkedIn</span>
-          </a>
-        </div>
-
-        <div class="chips" aria-label="Key strengths" id="chips"></div>
-
-        <!-- Theme switcher -->
-        <div class="theme-switch" aria-label="Theme switcher">
-          <button class="tbtn active" data-theme="neon">Neon</button>
-          <button class="tbtn" data-theme="bi">BI</button>
-          <button class="tbtn" data-theme="minimal">Minimal</button>
+        <div class="links" aria-label="Contact links">
+          <a class="link" href="mailto:danamohop.4@gmail.com">Email</a>
+          <a class="link" href="https://www.linkedin.com/in/dananaser1" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </div>
 
-    <nav class="topnav" aria-label="Primary navigation">
+    <nav class="nav">
       <a href="#about">About</a>
-      <a href="#portfolio-projects">How I Build Projects</a>
-      <a href="#case-study">Case Study</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
@@ -81,364 +43,116 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
-    <!-- ABOUT -->
     <section id="about" class="card">
-      <div class="section-head">
-        <h2>About</h2>
-        <p class="section-sub">Short, clear, and focused on business impact.</p>
-      </div>
+      <h2>About</h2>
+      <p>
+        Third-year B.Sc. Information Systems student at the University of Haifa, specializing in data analysis,
+        business intelligence, and structured data modeling. I enjoy working with SQL to build KPI logic and
+        reporting views that support decisions.
+      </p>
 
-      <div class="two-col">
-        <div>
-          <p id="aboutP1"></p>
-          <p id="aboutP2"></p>
-        </div>
-
-        <div class="callout">
-          <h3>What I bring</h3>
-          <ul class="checklist" id="whatIBring"></ul>
-        </div>
+      <div class="mini">
+        <div><strong>Focus:</strong> Data Analyst / BI</div>
+        <div><strong>Core:</strong> SQL + KPI Reporting</div>
+        <div><strong>Currently:</strong> Power BI practice</div>
       </div>
     </section>
 
-    <!-- HOW I BUILD PROJECTS (from your screenshots) -->
-    <section id="portfolio-projects" class="card">
-      <div class="section-head">
-        <h2>How I Build Portfolio Projects</h2>
-        <p class="section-sub">Real business problems → right tools → clear storytelling.</p>
-      </div>
-
-      <div class="grid grid-2">
-        <div class="callout">
-          <h3>1) Solve real business problems</h3>
-          <ul class="checklist">
-            <li>Sales performance & revenue trends</li>
-            <li>Customer retention / churn</li>
-            <li>Marketing ROI</li>
-            <li>Operations & inventory health</li>
-          </ul>
-        </div>
-
-        <div class="callout">
-          <h3>2) Use the right tools for the job</h3>
-          <ul class="checklist">
-            <li><strong>SQL</strong> → KPIs, joins, aggregations, reporting views</li>
-            <li><strong>Excel</strong> → quick validation & exploration</li>
-            <li><strong>Python (Pandas)</strong> → cleaning, transformation, automation</li>
-            <li><strong>Power BI</strong> → dashboards & storytelling</li>
-          </ul>
-        </div>
-
-        <div class="callout">
-          <h3>3) Structure projects like a story</h3>
-          <ol class="story-list">
-            <li>Problem statement</li>
-            <li>Business objective</li>
-            <li>Approach</li>
-            <li>Tools & techniques</li>
-            <li>Key insights</li>
-            <li>Recommendations</li>
-            <li>Links (Dashboard / GitHub / Notebook)</li>
-          </ol>
-        </div>
-
-        <div class="callout">
-          <h3>4) Explain the “Why” behind the work</h3>
-          <p class="muted">
-            I don’t just show charts — I explain what changed, why it matters, and what action should follow.
-          </p>
-
-          <h3 style="margin-top:1rem;">5) Host it professionally</h3>
-          <ul class="checklist">
-            <li>GitHub repo for code + documentation</li>
-            <li>Clear README + screenshots</li>
-            <li>Public dashboard link (when relevant)</li>
-          </ul>
-
-          <h3 style="margin-top:1rem;">6) Improve using feedback</h3>
-          <ul class="checklist">
-            <li>Iterate based on peers/mentors notes</li>
-            <li>Improve clarity & storytelling</li>
-            <li>Refine KPI definitions and insights</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CASE STUDY -->
-    <section id="case-study" class="card">
-      <div class="section-head">
-        <h2>Case Study</h2>
-        <p class="section-sub">One project presented like a real business assignment.</p>
-      </div>
-
-      <div class="two-col">
-        <div>
-          <h3 id="caseTitle">Case Study Title</h3>
-          <p class="muted" id="caseSummary"></p>
-
-          <div class="proj-block">
-            <div class="label">Brief</div>
-            <div class="value" id="caseBrief"></div>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Stakeholders</div>
-            <div class="value" id="caseStakeholders"></div>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Before → After</div>
-            <ul id="caseBeforeAfter"></ul>
-          </div>
-        </div>
-
-        <div class="callout">
-          <h3>Deliverables</h3>
-          <ul class="checklist" id="caseDeliverables"></ul>
-          <div style="margin-top:.9rem;">
-            <a id="caseLink" class="btn primary" href="#" target="_blank" rel="noopener" style="display:none;">View Case Study</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
     <section id="projects" class="card">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="section-sub">Mini case studies: problem → approach → impact.</p>
-      </div>
+      <h2>Projects</h2>
 
-      <div class="grid grid-3" id="projectsGrid"></div>
+      <div class="grid">
+        <article class="proj">
+          <h3>Winery Sales & Inventory Analysis</h3>
+          <p class="muted"><strong>Objective:</strong> Improve inventory visibility and support operational decisions.</p>
+          <ul>
+            <li>Designed ERD and normalized tables for reliable querying</li>
+            <li>Implemented analytical SQL queries for KPI tracking</li>
+            <li>Highlighted product-level trends and stock imbalance patterns</li>
+          </ul>
+          <p class="tags"><span>SQL</span><span>MS Access</span><span>Data Modeling</span></p>
+        </article>
+
+        <article class="proj">
+          <h3>StockSync (Web App)</h3>
+          <p class="muted"><strong>Objective:</strong> Manage kitchen inventory and suggest recipes based on available ingredients.</p>
+          <ul>
+            <li>Built a responsive UI with clear UX and mobile accessibility</li>
+            <li>Structured inventory logic to support KPI-style monitoring</li>
+          </ul>
+          <p class="tags"><span>HTML</span><span>CSS</span><span>UI/UX</span></p>
+        </article>
+
+        <article class="proj">
+          <h3>Hospital Operations System</h3>
+          <p class="muted"><strong>Focus:</strong> Structured operational logic for coordination and record management.</p>
+          <ul>
+            <li>Modeled entities and relationships</li>
+            <li>Implemented consistent logic for operations and records</li>
+          </ul>
+          <p class="tags"><span>Java</span><span>OOP</span></p>
+        </article>
+      </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="card">
-      <div class="section-head">
-        <h2>Skills</h2>
-        <p class="section-sub">Organized for Data Analyst / BI roles.</p>
-      </div>
+      <h2>Skills</h2>
 
-      <div class="grid grid-2" id="skillsGrid"></div>
+      <div class="skill-grid">
+        <div>
+          <h3>Data & Analytics</h3>
+          <ul class="chips">
+            <li>SQL</li><li>Data Modeling</li><li>KPI Reporting</li><li>Data Cleaning</li><li>Excel</li><li>Python (Pandas)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Tools</h3>
+          <ul class="chips">
+            <li>Power BI (Developing)</li><li>Git</li><li>Docker (Basic)</li><li>Linux</li><li>MS Access</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education" class="card">
-      <div class="section-head">
-        <h2>Education</h2>
-        <p class="section-sub">Relevant coursework aligned with data & BI.</p>
-      </div>
+      <h2>Education</h2>
+      <p><strong>University of Haifa</strong> — B.Sc. in Information Systems (3rd year)</p>
+      <p class="muted">Expected Graduation: 2026–2027</p>
 
-      <div class="callout">
-        <h3 id="eduInstitution">Institution</h3>
-        <p class="muted" id="eduMeta"></p>
-
-        <h4 style="margin-top:1rem;">Relevant coursework</h4>
-        <ul class="checklist" id="eduCourses"></ul>
-      </div>
+      <h3>Relevant Coursework</h3>
+      <ul class="chips">
+        <li>Database Systems (SQL)</li>
+        <li>Business Intelligence & Data Warehousing</li>
+        <li>Big Data Management</li>
+        <li>Statistics for Information Systems</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Systems Analysis & Design</li>
+      </ul>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="card">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <p class="section-sub">Let’s connect — quick links below.</p>
-      </div>
-
-      <div class="contact-row">
-        <a class="contact-tile" id="contactEmailTile" href="#">
-          <div class="ct-title">Email</div>
-          <div class="ct-value" id="contactEmailText"></div>
+      <h2>Contact</h2>
+      <div class="contact">
+        <a class="contact-box" href="mailto:danamohop.4@gmail.com">
+          <span>Email</span>
+          <strong>danamohop.4@gmail.com</strong>
         </a>
 
-        <a class="contact-tile" id="contactLinkedinTile" href="#" target="_blank" rel="noopener">
-          <div class="ct-title">LinkedIn</div>
-          <div class="ct-value" id="contactLinkedinText"></div>
+        <a class="contact-box" href="https://www.linkedin.com/in/dananaser1" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <strong>linkedin.com/in/dananaser1</strong>
         </a>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <p id="footerText">© 2026 • Portfolio</p>
+  <footer class="footer">
+    <p>© 2026 Dana Naser • Data Analyst Portfolio</p>
   </footer>
 
-  <script>
-    // Scroll progress bar
-    const bar = document.querySelector('.scroll-progress');
-    window.addEventListener('scroll', () => {
-      const h = document.documentElement;
-      const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
-      bar.style.transform = `scaleX(${scrolled / 100})`;
-    });
-
-    // Theme switcher
-    const buttons = document.querySelectorAll('.tbtn');
-    const body = document.body;
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const theme = btn.dataset.theme;
-        body.classList.remove('theme-minimal', 'theme-bi', 'theme-neon');
-        body.classList.add(`theme-${theme}`);
-        buttons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-
-    // Helper: create chip
-    function makeChip(text){
-      const s = document.createElement('span');
-      s.className = 'chip';
-      s.textContent = text;
-      return s;
-    }
-
-    // Helper: create li
-    function li(text){
-      const el = document.createElement('li');
-      el.textContent = text;
-      return el;
-    }
-
-    // Render from JSON
-    async function loadData(){
-      const res = await fetch('./data.json');
-      const data = await res.json();
-
-      // HERO
-      document.getElementById('name').textContent = data.name;
-      document.getElementById('headline').textContent = data.headline;
-      document.getElementById('profile').textContent = data.profile;
-
-      document.getElementById('emailLink').href = `mailto:${data.contact.email}`;
-      document.getElementById('linkedinLink').href = data.contact.linkedin;
-
-      // Chips
-      const chipsWrap = document.getElementById('chips');
-      chipsWrap.innerHTML = '';
-      (data.key_chips || []).forEach(c => chipsWrap.appendChild(makeChip(c)));
-
-      // ABOUT
-      document.getElementById('aboutP1').textContent = data.about?.p1 || '';
-      document.getElementById('aboutP2').textContent = data.about?.p2 || '';
-      const whatIBring = document.getElementById('whatIBring');
-      whatIBring.innerHTML = '';
-      (data.about?.what_i_bring || []).forEach(x => whatIBring.appendChild(li(x)));
-
-      // CASE STUDY
-      document.getElementById('caseTitle').textContent = data.case_study.title;
-      document.getElementById('caseSummary').textContent = data.case_study.summary;
-      document.getElementById('caseBrief').textContent = data.case_study.brief;
-      document.getElementById('caseStakeholders').textContent = data.case_study.stakeholders;
-
-      const ba = document.getElementById('caseBeforeAfter');
-      ba.innerHTML = '';
-      (data.case_study.before_after || []).forEach(x => ba.appendChild(li(x)));
-
-      const del = document.getElementById('caseDeliverables');
-      del.innerHTML = '';
-      (data.case_study.deliverables || []).forEach(x => del.appendChild(li(x)));
-
-      const caseLink = document.getElementById('caseLink');
-      if (data.case_study.link && data.case_study.link.trim()){
-        caseLink.style.display = 'inline-flex';
-        caseLink.href = data.case_study.link;
-      }
-
-      // PROJECTS
-      const grid = document.getElementById('projectsGrid');
-      grid.innerHTML = '';
-      data.projects.forEach(p => {
-        const card = document.createElement('article');
-        card.className = 'project';
-
-        const tagsHtml = (p.tags || []).map(t => `<span>${t}</span>`).join('');
-
-        card.innerHTML = `
-          <div class="project-top">
-            <div>
-              <h3>${p.name}</h3>
-              <p class="muted">${p.one_liner}</p>
-            </div>
-            <div class="pill">${p.pill}</div>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Problem</div>
-            <div class="value">${p.problem}</div>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Business objective</div>
-            <div class="value">${p.objective}</div>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Approach</div>
-            <ul>${(p.approach || []).map(x => `<li>${x}</li>`).join('')}</ul>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Key insights</div>
-            <ul>${(p.insights || []).map(x => `<li>${x}</li>`).join('')}</ul>
-          </div>
-
-          <div class="proj-block">
-            <div class="label">Recommendation</div>
-            <ul>${(p.recommendations || []).map(x => `<li>${x}</li>`).join('')}</ul>
-          </div>
-
-          <div class="tags">${tagsHtml}</div>
-
-          ${p.link ? `<div style="margin-top: .9rem;"><a class="btn primary" href="${p.link}" target="_blank" rel="noopener">View Project</a></div>` : ''}
-        `;
-
-        grid.appendChild(card);
-      });
-
-      // SKILLS
-      const skillsGrid = document.getElementById('skillsGrid');
-      skillsGrid.innerHTML = '';
-      const skillGroups = data.skills;
-      Object.keys(skillGroups).forEach(groupName => {
-        const box = document.createElement('div');
-        box.className = 'callout';
-        box.innerHTML = `
-          <h3>${groupName}</h3>
-          <ul class="checklist">
-            ${skillGroups[groupName].map(s => `<li>${s}</li>`).join('')}
-          </ul>
-        `;
-        skillsGrid.appendChild(box);
-      });
-
-      // EDUCATION
-      const edu = data.education[0];
-      document.getElementById('eduInstitution').textContent = edu.institution;
-      document.getElementById('eduMeta').textContent = `${edu.degree} • ${edu.status} • Expected ${edu.expected_graduation}`;
-      const courses = document.getElementById('eduCourses');
-      courses.innerHTML = '';
-      (edu.relevant_coursework || []).forEach(c => courses.appendChild(li(c)));
-
-      // CONTACT
-      document.getElementById('contactEmailTile').href = `mailto:${data.contact.email}`;
-      document.getElementById('contactEmailText').textContent = data.contact.email;
-
-      document.getElementById('contactLinkedinTile').href = data.contact.linkedin;
-      document.getElementById('contactLinkedinText').textContent = data.contact.linkedin.replace('https://', '');
-
-      // FOOTER
-      const year = new Date().getFullYear();
-      document.getElementById('footerText').textContent = `© ${year} ${data.name} • Data Analyst Portfolio`;
-    }
-
-    loadData().catch(err => {
-      console.error('Failed to load data.json:', err);
-    });
-  </script>
 </body>
 </html>
