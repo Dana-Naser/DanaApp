@@ -70,68 +70,38 @@
   "projects": [
     {
       "name": "Winery Sales & Inventory Analysis",
-      "pill": "SQL • Modeling • Reporting",
-      "one_liner": "Designed KPI-driven reporting to improve inventory visibility and operational decisions.",
-      "problem": "Limited visibility into product-level sales performance and stock risk.",
-      "objective": "Improve inventory awareness and enable structured KPI tracking for decision-making.",
+      "pill": "SQL • Data Modeling",
+      "one_liner": "Built KPI-driven SQL monitoring to improve inventory visibility.",
       "approach": [
-        "Designed normalized schema (ERD) to support reliable querying",
-        "Built SQL queries for KPI reporting and monitoring",
-        "Structured repeatable reporting logic for consistency"
+        "Designed normalized database schema (ERD)",
+        "Developed analytical SQL queries for KPI tracking",
+        "Identified stock imbalance and rotation trends"
       ],
-      "insights": [
-        "Uneven product rotation across categories",
-        "Overstock risk in low-performing items"
-      ],
-      "recommendations": [
-        "Rebalance inventory based on demand trends",
-        "Implement weekly KPI monitoring (stock risk, rotation, sales)"
-      ],
-      "tags": ["SQL", "ERD", "MS Access", "KPIs"],
+      "tags": ["SQL", "ERD", "KPIs"],
       "link": ""
     },
     {
       "name": "StockSync",
-      "pill": "Web • UI/UX • KPI Thinking",
-      "one_liner": "Inventory tracking concept focused on operational clarity and structured monitoring.",
-      "problem": "Users lacked clear visibility into inventory status and waste patterns.",
-      "objective": "Reduce waste and improve inventory awareness through structured visibility.",
+      "pill": "Web • KPI Thinking",
+      "one_liner": "Inventory tracking concept focused on structured visibility and clarity.",
       "approach": [
-        "Designed responsive UI focused on clarity and speed",
-        "Structured inventory logic to support KPI-style monitoring",
-        "Defined stock alerts and simple dashboard metrics"
+        "Designed responsive UI for fast decision-making",
+        "Structured inventory tracking logic",
+        "Defined KPI-style monitoring concept"
       ],
-      "insights": [
-        "Clear visibility improves decision speed and reduces waste risk",
-        "Simple KPI widgets make monitoring actionable"
-      ],
-      "recommendations": [
-        "Add expiring-soon alerts and usage-rate indicators",
-        "Include category filters and consumption trend view"
-      ],
-      "tags": ["HTML", "CSS", "Responsive", "UI/UX"],
+      "tags": ["HTML", "CSS", "UI/UX"],
       "link": ""
     },
     {
       "name": "Hospital Operations System",
-      "pill": "Structured Data • Process Logic",
-      "one_liner": "Structured operations system emphasizing clean data architecture and maintainable workflows.",
-      "problem": "Operational workflows require consistent structure to keep records reliable.",
-      "objective": "Model core entities and workflows to support coordination and maintainability.",
+      "pill": "Java • OOP",
+      "one_liner": "Structured operations system emphasizing clean data logic.",
       "approach": [
-        "Modeled entities and relationships for operations management",
-        "Built maintainable OOP structure for core workflows",
-        "Focused on structured thinking and data consistency"
+        "Modeled core entities and relationships",
+        "Implemented maintainable OOP architecture",
+        "Ensured structured workflow consistency"
       ],
-      "insights": [
-        "Strong system-to-data translation",
-        "Clear entity structure improves operational consistency"
-      ],
-      "recommendations": [
-        "Add reporting views for operational monitoring",
-        "Document workflows and entity relationships clearly"
-      ],
-      "tags": ["Java", "OOP", "Process", "Data Structuring"],
+      "tags": ["Java", "OOP", "Data Structuring"],
       "link": ""
     }
   ]
