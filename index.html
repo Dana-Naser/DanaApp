@@ -3,128 +3,358 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dana Naser - Portfolio</title>
+  <title>Dana Naser | Data Analyst Portfolio</title>
+  <meta name="description" content="Dana Naser — Data Analyst portfolio: SQL, BI, KPI reporting, data modeling, and projects." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <div class="profile-photo"></div>
-    <h1>Dana Naser</h1>
+  <!-- Top progress bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Social Links -->
-    <div class="social-links" aria-label="Contact and social links">
-      <a href="mailto:danamohop.4@gmail.com" class="social" aria-label="Email">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
-        </svg>
-        <span>Email</span>
-      </a>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="profile-wrap">
+        <div class="profile-photo" aria-label="Profile photo"></div>
+        <div class="profile-badge" title="Open to work">
+          <span class="dot"></span>
+          Open to work
+        </div>
+      </div>
 
-      <a href="https://www.linkedin.com/in/dananaser1" target="_blank" rel="noopener" class="social" aria-label="LinkedIn">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM0 8.98h5V24H0V8.98Zm7.98 0h4.79v2.05h.07c.67-1.27 2.32-2.6 4.78-2.6 5.12 0 6.07 3.37 6.07 7.76V24h-5v-6.7c0-1.6-.03-3.67-2.24-3.67-2.24 0-2.58 1.75-2.58 3.55V24h-5V8.98Z"/>
-        </svg>
-        <span>LinkedIn</span>
-      </a>
+      <div class="hero-text">
+        <h1>Dana Naser</h1>
+        <p class="headline">Data Analyst • SQL • Business Intelligence • KPI Reporting</p>
+
+        <p class="subhead">
+          I turn raw data into clear, actionable insights that support business decision-making.
+          Strong foundation in SQL, BI & data modeling, with experience building KPI logic and structured reporting.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+
+        <div class="social-links" aria-label="Contact and social links">
+          <a href="mailto:danamohop.4@gmail.com" class="social" aria-label="Email">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
+            </svg>
+            <span>Email</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/dananaser1" target="_blank" rel="noopener" class="social" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM0 8.98h5V24H0V8.98Zm7.98 0h4.79v2.05h.07c.67-1.27 2.32-2.6 4.78-2.6 5.12 0 6.07 3.37 6.07 7.76V24h-5v-6.7c0-1.6-.03-3.67-2.24-3.67-2.24 0-2.58 1.75-2.58 3.55V24h-5V8.98Z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <div class="chips" aria-label="Key strengths">
+          <span class="chip">SQL</span>
+          <span class="chip">BI & Data Warehousing</span>
+          <span class="chip">Data Modeling</span>
+          <span class="chip">KPI Reporting</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Python (Pandas)</span>
+        </div>
+      </div>
     </div>
 
-    <nav>
+    <nav class="topnav" aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Motivated third-year B.Sc. Information Systems student at the University of Haifa, with a strong foundation in programming, databases, and system architecture. Experienced in Java, C, SQL, HTML, CSS, Linux, and object-oriented programming, with proven ability to work in collaborative academic projects.
-      </p>
 
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:danamohop.4@gmail.com">danamohop.4@gmail.com</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dananaser1" target="_blank" rel="noopener">dananaser1</a></li>
-      </ul>
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="section-sub">A short introduction focused on data & business impact.</p>
+      </div>
 
-      <div class="education">
-        <h3>Education</h3>
-        <ul>
-          <li>
-            <strong>University of Haifa</strong> — B.Sc. in Information Systems (3rd year)<br />
-            Expected Graduation: 2026–2027
-          </li>
-        </ul>
+      <div class="two-col">
+        <div>
+          <p>
+            I’m a third-year B.Sc. Information Systems student at the University of Haifa, specializing in
+            data analysis, business intelligence, and structured data modeling.
+          </p>
+          <p>
+            I enjoy working with SQL and analytics to build KPI logic, reporting views, and clear dashboards that
+            help stakeholders make better decisions.
+          </p>
 
-        <h4>Relevant Coursework</h4>
-        <ul>
-          <li>Data Structures and Algorithms</li>
-          <li>Object-Oriented Programming (Java)</li>
-          <li>Introduction to Databases</li>
-          <li>Introduction to Computer Science and Programming</li>
-          <li>Mathematics for Logic and Discrete Structures</li>
-          <li>Operating Systems</li>
-        </ul>
+          <div class="mini-stats">
+            <div class="mini">
+              <div class="mini-title">Focus</div>
+              <div class="mini-value">Data Analyst / BI</div>
+            </div>
+            <div class="mini">
+              <div class="mini-title">Core</div>
+              <div class="mini-value">SQL + KPI Reporting</div>
+            </div>
+            <div class="mini">
+              <div class="mini-title">Currently</div>
+              <div class="mini-value">Power BI practice</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <h3>What I bring</h3>
+          <ul class="checklist">
+            <li>Strong SQL fundamentals (joins, aggregations, subqueries)</li>
+            <li>BI mindset: KPIs, trends, anomalies, operational visibility</li>
+            <li>Data modeling & database design (ERD, normalization)</li>
+            <li>Clear communication & structured problem solving</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="grid grid-2">
-        <li>
-          <strong>Hospital Management System</strong><br />
-          Desktop application for managing hospital operations and patient records.<br />
-          <em>Technologies:</em> Java, Swing, File Serialization
-        </li>
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="section-sub">Presented as mini case studies (problem → approach → impact).</p>
+      </div>
 
-        <li>
-          <strong>Wine Inventory Management System</strong><br />
-          Full-stack desktop system with XML/JSON import/export and database integration.<br />
-          <em>Technologies:</em> Java, MS Access, XML/JSON
-        </li>
+      <div class="grid grid-3">
 
-        <li>
-          <strong>Website Development – StockSync</strong><br />
-          Built a responsive web application to manage kitchen inventory and suggest recipes based on available ingredients. Emphasis on clear UI/UX design and mobile accessibility.<br />
-          <em>Technologies:</em> HTML, CSS
-        </li>
-      </ul>
+        <article class="project">
+          <div class="project-top">
+            <h3>Winery Sales & Inventory Analysis</h3>
+            <div class="pill">SQL • Data Modeling • Reporting</div>
+          </div>
+
+          <p class="muted">
+            Built a structured analytics foundation to support KPI tracking and operational decisions.
+          </p>
+
+          <div class="proj-block">
+            <div class="label">Business objective</div>
+            <div class="value">Improve inventory visibility and support operational decision-making.</div>
+          </div>
+
+          <div class="proj-block">
+            <div class="label">Approach</div>
+            <ul>
+              <li>Designed ERD + normalized tables for reliable querying</li>
+              <li>Implemented analytical SQL queries for KPI tracking</li>
+              <li>Simulated reporting logic for management insights</li>
+            </ul>
+          </div>
+
+          <div class="proj-block">
+            <div class="label">Outcome</div>
+            <ul>
+              <li>Identified product-level sales distribution trends</li>
+              <li>Highlighted stock imbalance patterns</li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>SQL</span><span>MS Access</span><span>ERD</span><span>KPIs</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3>StockSync</h3>
+            <div class="pill">Web • UI/UX • KPI Thinking</div>
+          </div>
+
+          <p class="muted">
+            Responsive web app concept for kitchen inventory tracking + recipe suggestions.
+          </p>
+
+          <div class="proj-block">
+            <div class="label">Business objective</div>
+            <div class="value">Reduce waste and improve inventory awareness with a clear interface.</div>
+          </div>
+
+          <div class="proj-block">
+            <div class="label">Approach</div>
+            <ul>
+              <li>Designed mobile-friendly UI focused on clarity & speed</li>
+              <li>Structured inventory logic to enable KPI-style monitoring</li>
+              <li>Supported recipe suggestions based on available ingredients</li>
+            </ul>
+          </div>
+
+          <div class="proj-block">
+            <div class="label">Outcome</div>
+            <ul>
+              <li>Demonstrates product thinking + dashboard mindset</li>
+              <li>Highlights accessibility & UX best practices</li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>Responsive</span><span>UI/UX</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3>Hospital Operations System</h3>
+            <div class="pill">Structured Data • Process Logic</div>
+          </div>
+
+          <p class="muted">
+            Desktop system project emphasizing structured data logic and operational organization.
+          </p>
+
+          <div class="proj-block">
+            <div class="label">Business focus</div>
+            <div class="value">Support coordination by structuring operational entities and workflows.</div>
+          </div>
+
+          <div class="proj-block">
+            <div class="label">Approach</div>
+            <ul>
+              <li>Modeled core entities and relationships</li>
+              <li>Built consistent logic for managing operations & records</li>
+              <li>Emphasized clean structure and maintainability</li>
+            </ul>
+          </div>
+
+          <div class="proj-block">
+            <div class="label">Skills demonstrated</div>
+            <ul>
+              <li>System-to-data translation</li>
+              <li>Structured thinking and reliable logic</li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Java</span><span>OOP</span><span>Process</span><span>Data Structuring</span>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Java (OOP)</li>
-        <li>C</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>ETL / ELT</li>
-        <li>MS Access</li>
-        <li>XML / JSON</li>
-        <li>Linux (Bash)</li>
-        <li>Git</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-        <li>JUnit</li>
-        <li>Debugging</li>
-        <li>Agile teamwork</li>
-        <li>Analytical thinking</li>
-        <li>Independent learning</li>
-        <li>Time management</li>
-      </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="card">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="section-sub">Organized by what recruiters look for in a Data Analyst.</p>
+      </div>
 
-      <h3>Languages</h3>
-      <ul class="skills-list">
-        <li>Arabic (Native)</li>
-        <li>Hebrew (Fluent)</li>
-        <li>English (Fluent)</li>
-      </ul>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>Data & Analytics</h3>
+          <ul class="skills-list">
+            <li>SQL (joins, aggregations, subqueries)</li>
+            <li>Data modeling & normalization</li>
+            <li>KPI design & reporting logic</li>
+            <li>Data cleaning & transformation</li>
+            <li>Excel (advanced, pivot tables)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <ul class="skills-list">
+            <li>Power BI (developing)</li>
+            <li>Git</li>
+            <li>Docker (basic)</li>
+            <li>Linux</li>
+            <li>MS Access</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <ul class="skills-list">
+            <li>Python (Pandas)</li>
+            <li>Java (OOP)</li>
+            <li>HTML/CSS (responsive UI)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul class="skills-list">
+            <li>Arabic (Native)</li>
+            <li>Hebrew (Fluent)</li>
+            <li>English (Fluent)</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="card">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p class="section-sub">Focused on data-relevant coursework (no grades displayed).</p>
+      </div>
+
+      <div class="edu">
+        <div class="edu-main">
+          <h3>University of Haifa</h3>
+          <p class="muted">B.Sc. in Information Systems • 3rd year • Expected 2026–2027</p>
+        </div>
+
+        <div class="edu-courses">
+          <h4>Relevant coursework</h4>
+          <ul class="course-list">
+            <li>Database Systems (SQL)</li>
+            <li>Business Intelligence & Data Warehousing</li>
+            <li>Big Data Management</li>
+            <li>Statistics for Information Systems</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Systems Analysis & Design</li>
+            <li>Software Engineering & QA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="section-sub">Let’s connect — quick links below.</p>
+      </div>
+
+      <div class="contact-row">
+        <a class="contact-tile" href="mailto:danamohop.4@gmail.com">
+          <div class="ct-title">Email</div>
+          <div class="ct-value">danamohop.4@gmail.com</div>
+        </a>
+
+        <a class="contact-tile" href="https://www.linkedin.com/in/dananaser1" target="_blank" rel="noopener">
+          <div class="ct-title">LinkedIn</div>
+          <div class="ct-value">linkedin.com/in/dananaser1</div>
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 Dana Naser. All rights reserved.</p>
+    <p>© 2026 Dana Naser • Data Analyst Portfolio</p>
   </footer>
+
+  <script>
+    // Scroll progress bar
+    const bar = document.querySelector('.scroll-progress');
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      bar.style.transform = `scaleX(${scrolled / 100})`;
+    });
+  </script>
 </body>
 </html>
