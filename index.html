@@ -210,14 +210,23 @@
 
         const tags = (p.tags || []).map(t => `<span>${t}</span>`).join('');
 
-        card.innerHTML = `
-          <div class="project-top">
-            <div>
-              <h3>${p.name}</h3>
-              <p class="muted">${p.one_liner}</p>
-            </div>
-            <div class="pill">${p.pill}</div>
-          </div>
+      card.innerHTML = `
+  <div class="project-top">
+    <div>
+      <h3>${p.name}</h3>
+      <p class="muted">${p.one_liner}</p>
+    </div>
+    <div class="pill">${p.pill}</div>
+  </div>
+
+  <ul class="checklist" style="margin-top:.8rem;">
+    ${(p.approach||[]).slice(0,3).map(x => `<li>${x}</li>`).join('')}
+  </ul>
+
+  <div style="margin-top:.8rem; font-weight:900; color:#c7d2fe;">
+    Tools: ${p.tags.join(', ')}
+  </div>
+`;
 
           <div class="proj-block">
             <div class="label">Problem</div>
