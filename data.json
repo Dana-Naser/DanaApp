@@ -67,64 +67,47 @@
       "English (Fluent)"
     ]
   },
-  "case_study": {
-    "title": "Winery Sales & Inventory Analysis",
-    "summary": "A structured analytics foundation to support KPI tracking and operational decision-making.",
-    "brief": "Improve inventory visibility and identify sales & stock risks using normalized data + KPI queries.",
-    "stakeholders": "Operations manager, sales lead",
-    "before_after": [
-      "Before: limited KPI visibility and inconsistent reporting logic",
-      "After: normalized schema + repeatable SQL KPI queries for monitoring"
-    ],
-    "deliverables": [
-      "ERD + normalized schema",
-      "KPI definitions (sales, stock risk, rotation)",
-      "Analytical SQL queries for reporting",
-      "Insights & recommendations"
-    ],
-    "link": ""
-  },
   "projects": [
     {
       "name": "Winery Sales & Inventory Analysis",
       "pill": "SQL • Modeling • Reporting",
-      "one_liner": "Designed SQL-driven KPI monitoring to improve inventory visibility and decision-making.",
-      "problem": "Inventory levels were not aligned with demand trends, limiting operational visibility.",
-      "objective": "Track KPIs and improve inventory awareness to support operational decisions.",
+      "one_liner": "Designed KPI-driven reporting to improve inventory visibility and operational decisions.",
+      "problem": "Limited visibility into product-level sales performance and stock risk.",
+      "objective": "Improve inventory awareness and enable structured KPI tracking for decision-making.",
       "approach": [
-        "Designed ERD and normalized tables for reliable querying",
-        "Built analytical SQL queries for KPI tracking",
-        "Simulated reporting logic for management insights"
+        "Designed normalized schema (ERD) to support reliable querying",
+        "Built SQL queries for KPI reporting and monitoring",
+        "Structured repeatable reporting logic for consistency"
       ],
       "insights": [
-        "Identified product-level sales distribution trends",
-        "Highlighted stock imbalance patterns across items"
+        "Uneven product rotation across categories",
+        "Overstock risk in low-performing items"
       ],
       "recommendations": [
-        "Rebalance low-rotation items to reduce holding risk",
-        "Monitor weekly KPI indicators to prevent shortages"
+        "Rebalance inventory based on demand trends",
+        "Implement weekly KPI monitoring (stock risk, rotation, sales)"
       ],
-      "tags": ["SQL", "MS Access", "ERD", "KPIs"],
+      "tags": ["SQL", "ERD", "MS Access", "KPIs"],
       "link": ""
     },
     {
       "name": "StockSync",
       "pill": "Web • UI/UX • KPI Thinking",
-      "one_liner": "Inventory tracking concept focused on clarity, visibility, and operational thinking.",
-      "problem": "Users struggle to track inventory clearly and identify waste-driving patterns.",
-      "objective": "Improve inventory awareness and reduce waste through structured visibility.",
+      "one_liner": "Inventory tracking concept focused on operational clarity and structured monitoring.",
+      "problem": "Users lacked clear visibility into inventory status and waste patterns.",
+      "objective": "Reduce waste and improve inventory awareness through structured visibility.",
       "approach": [
-        "Designed mobile-friendly UI focused on clarity & speed",
-        "Structured inventory logic to enable KPI-style monitoring",
-        "Supported recipe suggestions based on available ingredients"
+        "Designed responsive UI focused on clarity and speed",
+        "Structured inventory logic to support KPI-style monitoring",
+        "Defined stock alerts and simple dashboard metrics"
       ],
       "insights": [
-        "Demonstrates dashboard mindset: visibility → action",
-        "Highlights UX best practices for fast decision-making"
+        "Clear visibility improves decision speed and reduces waste risk",
+        "Simple KPI widgets make monitoring actionable"
       ],
       "recommendations": [
-        "Add simple KPI widgets (items expiring soon, weekly waste)",
-        "Include filters for category + consumption rate"
+        "Add expiring-soon alerts and usage-rate indicators",
+        "Include category filters and consumption trend view"
       ],
       "tags": ["HTML", "CSS", "Responsive", "UI/UX"],
       "link": ""
@@ -132,17 +115,17 @@
     {
       "name": "Hospital Operations System",
       "pill": "Structured Data • Process Logic",
-      "one_liner": "Desktop system emphasizing clean data structure and maintainable process logic.",
-      "problem": "Operational records and workflows require consistent structure to stay reliable.",
+      "one_liner": "Structured operations system emphasizing clean data architecture and maintainable workflows.",
+      "problem": "Operational workflows require consistent structure to keep records reliable.",
       "objective": "Model core entities and workflows to support coordination and maintainability.",
       "approach": [
-        "Modeled core entities and relationships",
-        "Built consistent OOP logic for managing operations & records",
-        "Focused on maintainability and structured thinking"
+        "Modeled entities and relationships for operations management",
+        "Built maintainable OOP structure for core workflows",
+        "Focused on structured thinking and data consistency"
       ],
       "insights": [
         "Strong system-to-data translation",
-        "Reliable structure improves operational consistency"
+        "Clear entity structure improves operational consistency"
       ],
       "recommendations": [
         "Add reporting views for operational monitoring",
