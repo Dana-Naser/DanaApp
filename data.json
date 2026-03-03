@@ -1,12 +1,22 @@
 {
   "name": "Dana Naser",
+  "headline": "Data Analyst • SQL • Business Intelligence • KPI Reporting",
+  "profile": "Data-driven Information Systems student focused on SQL, KPI design, and business reporting. I transform structured data into clear insights that support decision-making.",
+
   "contact": {
     "email": "danamohop.4@gmail.com",
     "linkedin": "https://www.linkedin.com/in/dananaser1"
   },
-  "headline": "Data Analyst • SQL • Business Intelligence • KPI Reporting",
-  "profile": "Data-driven Information Systems student focused on SQL, KPI design, and business reporting. I transform structured data into clear insights that support decision-making.",
-  "key_chips": ["SQL","BI & Data Warehousing","Data Modeling","KPI Reporting","Excel","Python (Pandas)"],
+
+  "key_chips": [
+    "SQL",
+    "Power BI",
+    "Data Modeling",
+    "KPI Reporting",
+    "Excel",
+    "Python (Pandas)"
+  ],
+
   "about": {
     "p1": "I’m a third-year B.Sc. Information Systems student at the University of Haifa, specializing in data analytics and business intelligence.",
     "p2": "My strength is translating business questions into structured SQL logic, KPIs, and reporting views that create operational clarity and support better decisions.",
@@ -17,35 +27,7 @@
       "Clear communication & structured problem-solving"
     ]
   },
-  "education": [
-    {
-      "institution": "University of Haifa",
-      "degree": "B.Sc. in Information Systems",
-      "status": "3rd year",
-      "expected_graduation": "2026–2027",
-      "relevant_coursework": [
-        "Database Systems (SQL)",
-        "Business Intelligence & Data Warehousing",
-        "Big Data",
-        "Statistics for Information Systems",
-        "Systems Analysis & Design",
-        "Data Structures & Algorithms",
-        "Software Engineering & QA"
-      ]
-    }
-  ],
-  "skills": {
-    "Data & Analytics": [
-      "SQL (joins, aggregations, subqueries)",
-      "Data modeling & normalization (ERD)",
-      "KPI design & reporting logic",
-      "Data cleaning & transformation",
-      "Excel (advanced, PivotTables)"
-    ],
-    "Tools": ["Power BI (developing)","Git","Docker (basic)","Linux","MS Access"],
-    "Programming": ["Python (Pandas)","Java (OOP)","HTML/CSS (responsive UI)"],
-    "Languages": ["Arabic (Native)","Hebrew (Fluent)","English (Fluent)"]
-  },
+
   "projects": [
     {
       "name": "Winery Sales & Inventory Analysis",
@@ -56,7 +38,7 @@
         "Developed analytical SQL queries for KPI tracking",
         "Identified stock imbalance and rotation trends"
       ],
-      "tags": ["SQL","ERD","KPIs"],
+      "tags": ["SQL", "ERD", "KPIs"],
       "link": ""
     },
     {
@@ -68,7 +50,7 @@
         "Structured inventory tracking logic",
         "Defined KPI-style monitoring concept"
       ],
-      "tags": ["HTML","CSS","UI/UX"],
+      "tags": ["HTML", "CSS", "UI/UX"],
       "link": ""
     },
     {
@@ -80,8 +62,53 @@
         "Implemented maintainable OOP architecture",
         "Ensured structured workflow consistency"
       ],
-      "tags": ["Java","OOP","Data Structuring"],
+      "tags": ["Java", "OOP", "Data Structuring"],
       "link": ""
+    }
+  ],
+
+  "skills": {
+    "Data & Analytics": [
+      "SQL (joins, aggregations, subqueries)",
+      "Data modeling & normalization (ERD)",
+      "KPI design & reporting logic",
+      "Data cleaning & transformation",
+      "Excel (advanced, PivotTables)"
+    ],
+    "Tools": [
+      "Power BI (developing)",
+      "Git",
+      "Docker (basic)",
+      "Linux",
+      "MS Access"
+    ],
+    "Programming": [
+      "Python (Pandas)",
+      "Java (OOP)",
+      "HTML/CSS (responsive UI)"
+    ],
+    "Languages": [
+      "Arabic (Native)",
+      "Hebrew (Fluent)",
+      "English (Fluent)"
+    ]
+  },
+
+  "education": [
+    {
+      "institution": "University of Haifa",
+      "degree": "B.Sc. in Information Systems",
+      "status": "3rd year",
+      "expected_graduation": "2026–2027",
+      "relevant_coursework": [
+        "Database Systems (SQL)",
+        "Business Intelligence & Data Warehousing",
+        "Big Data Management",
+        "Statistics for Information Systems",
+        "Systems Analysis & Design",
+        "Data Structures & Algorithms",
+        "Software Engineering & QA"
+      ]
     }
   ]
 }
