@@ -162,8 +162,6 @@
       document.getElementById('headline').textContent = data.headline;
       document.getElementById('profile').textContent = data.profile;
 
-      document.getElementById('emailLink').href = `mailto:${data.contact.email}`;
-      document.getElementById('linkedinLink').href = data.contact.linkedin;
 
       const chipsWrap = document.getElementById('chips');
       chipsWrap.innerHTML = '';
