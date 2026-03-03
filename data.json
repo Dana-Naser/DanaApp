@@ -1,6 +1,8 @@
 {
   "name": "Dana Naser",
-
+  "contact": {
+    "email": "danamohop.4@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/dananaser1"
   },
   "headline": "Data Analyst • SQL • Business Intelligence • KPI Reporting",
   "profile": "Data-driven Information Systems student focused on SQL, KPI design, and business reporting. I transform structured data into clear insights that support decision-making.",
@@ -27,7 +29,7 @@
       "institution": "University of Haifa",
       "degree": "B.Sc. in Information Systems",
       "status": "3rd year",
-      "expected_graduation": "2023-2027",
+      "expected_graduation": "2026–2027",
       "relevant_coursework": [
         "Database Systems (SQL)",
         "Business Intelligence & Data Warehousing",
