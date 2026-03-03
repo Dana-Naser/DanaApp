@@ -6,14 +6,7 @@
   },
   "headline": "Data Analyst • SQL • Business Intelligence • KPI Reporting",
   "profile": "Data-driven Information Systems student focused on SQL, KPI design, and business reporting. I transform structured data into clear insights that support decision-making.",
-  "key_chips": [
-    "SQL",
-    "BI & Data Warehousing",
-    "Data Modeling",
-    "KPI Reporting",
-    "Excel",
-    "Python (Pandas)"
-  ],
+  "key_chips": ["SQL","BI & Data Warehousing","Data Modeling","KPI Reporting","Excel","Python (Pandas)"],
   "about": {
     "p1": "I’m a third-year B.Sc. Information Systems student at the University of Haifa, specializing in data analytics and business intelligence.",
     "p2": "My strength is translating business questions into structured SQL logic, KPIs, and reporting views that create operational clarity and support better decisions.",
@@ -49,23 +42,9 @@
       "Data cleaning & transformation",
       "Excel (advanced, PivotTables)"
     ],
-    "Tools": [
-      "Power BI (developing)",
-      "Git",
-      "Docker (basic)",
-      "Linux",
-      "MS Access"
-    ],
-    "Programming": [
-      "Python (Pandas)",
-      "Java (OOP)",
-      "HTML/CSS (responsive UI)"
-    ],
-    "Languages": [
-      "Arabic (Native)",
-      "Hebrew (Fluent)",
-      "English (Fluent)"
-    ]
+    "Tools": ["Power BI (developing)","Git","Docker (basic)","Linux","MS Access"],
+    "Programming": ["Python (Pandas)","Java (OOP)","HTML/CSS (responsive UI)"],
+    "Languages": ["Arabic (Native)","Hebrew (Fluent)","English (Fluent)"]
   },
   "projects": [
     {
@@ -77,7 +56,7 @@
         "Developed analytical SQL queries for KPI tracking",
         "Identified stock imbalance and rotation trends"
       ],
-      "tags": ["SQL", "ERD", "KPIs"],
+      "tags": ["SQL","ERD","KPIs"],
       "link": ""
     },
     {
@@ -89,7 +68,7 @@
         "Structured inventory tracking logic",
         "Defined KPI-style monitoring concept"
       ],
-      "tags": ["HTML", "CSS", "UI/UX"],
+      "tags": ["HTML","CSS","UI/UX"],
       "link": ""
     },
     {
@@ -101,7 +80,7 @@
         "Implemented maintainable OOP architecture",
         "Ensured structured workflow consistency"
       ],
-      "tags": ["Java", "OOP", "Data Structuring"],
+      "tags": ["Java","OOP","Data Structuring"],
       "link": ""
     }
   ]
