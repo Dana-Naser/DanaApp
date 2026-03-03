@@ -205,63 +205,22 @@ grid.innerHTML = '';
   const card = document.createElement('article');
   card.className = 'project';
 
-  const tagsHtml = (p.tags || []).map(t => `<span>${t}</span>`).join('');
-
   card.innerHTML = `
     <div class="project-top">
       <div>
-        <h3>${p.name || ''}</h3>
-        <p class="muted">${p.one_liner || ''}</p>
+        <h3>${p.name}</h3>
+        <p class="muted">${p.one_liner}</p>
       </div>
-      <div class="pill">${p.pill || ''}</div>
+      <div class="pill">${p.pill}</div>
     </div>
 
     <ul class="checklist" style="margin-top:.8rem;">
-      ${(p.approach || []).slice(0,3).map(x => `<li>${x}</li>`).join('')}
+      ${(p.approach || []).map(x => `<li>${x}</li>`).join('')}
     </ul>
 
     <div style="margin-top:.8rem; font-weight:900; color:#c7d2fe;">
       Tools: ${(p.tags || []).join(', ')}
     </div>
-
-    <div class="proj-block">
-      <div class="label">Problem</div>
-      <div class="value">${p.problem || ''}</div>
-    </div>
-
-    <div class="proj-block">
-      <div class="label">Business objective</div>
-      <div class="value">${p.objective || ''}</div>
-    </div>
-
-    <div class="proj-block">
-      <div class="label">Approach</div>
-      <ul class="checklist">
-        ${(p.approach || []).map(x => `<li>${x}</li>`).join('')}
-      </ul>
-    </div>
-
-    <div class="proj-block">
-      <div class="label">Key insights</div>
-      <ul class="checklist">
-        ${(p.insights || []).map(x => `<li>${x}</li>`).join('')}
-      </ul>
-    </div>
-
-    <div class="proj-block">
-      <div class="label">Recommendations</div>
-      <ul class="checklist">
-        ${(p.recommendations || []).map(x => `<li>${x}</li>`).join('')}
-      </ul>
-    </div>
-
-    <div class="tags">${tagsHtml}</div>
-
-    ${p.link ? `
-      <div style="margin-top:.9rem;">
-        <a class="btn primary" href="${p.link}" target="_blank" rel="noopener">View Project</a>
-      </div>
-    ` : ``}
   `;
 
   grid.appendChild(card);
