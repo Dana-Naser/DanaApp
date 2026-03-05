@@ -456,3 +456,85 @@ footer{
 @media (max-width: 560px){
   .hero .chips{ display:none; }
 }
+/* ===== Professional Project Cards ===== */
+
+#projects .project{
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  border-radius: 14px;
+  padding: 1rem 1rem 1.1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+#projects .project-top{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: .8rem;
+}
+
+#projects .project h3{
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+#projects .project .muted{
+  margin: .25rem 0 0;
+  color: rgba(238,242,255,.78);
+  font-size: .95rem;
+}
+
+#projects .project .pill{
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  font-weight: 800;
+  font-size: .8rem;
+}
+
+#projects .project img{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.12);
+}
+
+#projects .project .checklist{
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+#projects .project .checklist li{
+  margin: .28rem 0;
+  font-size: .92rem;
+}
+
+#projects .project .tools-line{
+  font-weight: 800;
+  color: rgba(199,210,254,.95);
+  font-size: .92rem;
+}
+
+#projects .project .actions{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin-top:.2rem;
+}
+
+#projects .project .actions .btn{
+  padding: .55rem .9rem;
+  font-size: .9rem;
+  box-shadow: none;
+}
+
+/* Make grid tighter & more professional */
+#projects .grid-3{
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
+}
