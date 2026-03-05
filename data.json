@@ -30,6 +30,18 @@
 
   "projects": [
     {
+  "name": "Sales Performance Dashboard (Power BI)",
+  "pill": "Power BI • Data Visualization",
+  "one_liner": "Interactive dashboard for sales KPIs, category & regional analysis, and time trends.",
+  "approach": [
+    "Built KPI cards: Total Sales, Total Profit, Total Orders",
+    "Analyzed performance by Category and Region with interactive filters",
+    "Created a monthly sales trend to identify patterns over time"
+  ],
+  "tags": ["Power BI", "DAX (basic)", "KPIs", "Data Visualization"],
+  "link": "PASTE_YOUR_LINK_HERE"
+}
+    {
       "name": "Winery Sales & Inventory Analysis",
       "pill": "SQL • Data Modeling",
       "one_liner": "Built KPI-driven SQL monitoring to improve inventory visibility.",
