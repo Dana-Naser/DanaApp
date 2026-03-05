@@ -199,6 +199,7 @@ grid.innerHTML = '';
     <div style="margin-top:.8rem; font-weight:900; color:#c7d2fe;">
       Tools: ${(p.tags || []).join(', ')}
     </div>
+        ${p.link ? `<a class="btn" href="${p.link}" target="_blank" rel="noopener" style="margin-top:.9rem; display:inline-flex;">View Project</a>` : ``}
   `;
 
   grid.appendChild(card);
