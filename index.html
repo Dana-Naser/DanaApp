@@ -191,7 +191,14 @@ card.innerHTML = `
     </div>
     <div class="pill">${p.pill}</div>
   </div>
+<div class="tools-line">
+  Tools: ${(p.tags || []).join(', ')}
+</div>
 
+<div class="actions">
+  ${p.link ? `<a class="btn primary" href="${p.link}" target="_blank" rel="noopener">View Dashboard</a>` : ""}
+  ${p.repo ? `<a class="btn" href="${p.repo}" target="_blank" rel="noopener">GitHub</a>` : ""}
+</div>
   ${p.img ? `<img src="${p.img}" alt="Project preview" style="width:100%; border-radius:10px; margin-top:10px;">` : ""}
 
   <ul class="checklist" style="margin-top:.8rem;">
